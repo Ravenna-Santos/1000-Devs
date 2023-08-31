@@ -1,0 +1,19 @@
+const peso1 = 1;
+const peso2 = 2;
+const peso3 = 3;
+
+let nota1, nota2, nota3;
+let somaNotas;
+let somaPesos;
+let mediaPonderada;
+
+nota1 = parseFloat(prompt("Informe a primeira nota: "));
+nota2 = parseFloat(prompt("Informe a segunda nota: "));
+nota3 = parseFloat(prompt("Informe a terceira nota: "));
+
+somaNotas = (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3);
+somaPesos = (peso1 + peso2 + peso3);
+
+mediaPonderada = (somaNotas / somaPesos);
+
+console.log("A média ponderada das notas é: " + mediaPonderada.toFixed(2));

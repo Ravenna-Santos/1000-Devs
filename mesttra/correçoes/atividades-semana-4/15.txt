@@ -1,0 +1,19 @@
+let horasNormais, horasExtras, qtdeDep, salarioNormal;
+let salarioExtra, salarioDependentes, salarioLiquido;
+
+horasNormais = parseInt(prompt("Digite a quantidade total de horas normais: "));
+horasExtras = parseInt(prompt("Digite a quantidade total de horas extras: "));
+qtdeDep = parseInt(prompt("Digite a quantidade total de dependentes menores que 6 anos: "));
+
+salarioNormal = (horasNormais * 10);
+salarioExtra = (horasExtras * 15);
+salarioDependentes = (qtdeDep * 90);
+
+console.log(`Horas normais: R$ ${salarioNormal.toFixed(2)}`);
+console.log(`Adicional de Horas Extras: R$ ${salarioExtra.toFixed(2)}`);
+console.log(`Adicional de Dependentes: R$ ${salarioDependentes.toFixed(2)}`);
+
+salarioLiquido = (salarioNormal * 0.89);
+
+console.log(`Salario Liquido (Hrs normais - Desconto): R$ ${salarioLiquido.toFixed(2)}`);
+console.log(`Salario final: R$ ${(salarioLiquido + salarioExtra + salarioDependentes).toFixed(2)}`);

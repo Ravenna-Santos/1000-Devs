@@ -1,0 +1,6 @@
+let salariomin = parseFloat(prompt("Informe o valor do salário mínimo: "));
+let salariofun = parseFloat(prompt("Informe o valor do salário do funcionário: "));
+
+let salariosRecebidos = salariofun / salariomin;
+
+console.log("O funcionário recebe " + salariosRecebidos.toFixed(1) + " salários mínimos.");

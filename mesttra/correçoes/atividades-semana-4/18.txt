@@ -1,0 +1,13 @@
+let conta = parseFloat(prompt("Informe o valor da conta R$: "));
+
+let contaPor3 = (conta / 3);
+
+let carlos = Math.floor(contaPor3);
+let andre = Math.floor(contaPor3);
+
+let diferencaCentavos = (contaPor3 - carlos);
+let felipe = contaPor3 + (2 * diferencaCentavos);
+
+console.log(`Carlos pagará: R$ ${carlos.toFixed(2)}`);
+console.log(`Andre pagará: R$ ${andre.toFixed(2)}`);
+console.log(`Felipe pagará: R$ ${felipe.toFixed(2)}`);

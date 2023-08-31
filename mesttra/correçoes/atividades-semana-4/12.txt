@@ -1,0 +1,12 @@
+let frangos;
+let valorIdentificacao;
+let valorAlimentacao;
+let valorTotal;
+
+frangos = parseInt(prompt("Digite a quantidade de frangos: "));
+
+valorIdentificacao = frangos * 4.0;
+valorAlimentacao = frangos * 2 * 3.5;
+valorTotal = valorIdentificacao + valorAlimentacao;
+
+console.log(`O valor total para identificar os frangos é: R$ ${valorTotal.toFixed(2)}`);

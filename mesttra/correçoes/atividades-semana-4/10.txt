@@ -1,0 +1,16 @@
+let anoInicial, anoFinal;
+let anos, meses, dias, semanas;
+
+anoInicial = parseInt(prompt("Digite o ano inicial: "));
+anoFinal = parseInt(prompt("Digite o ano final: "));
+
+anos = (anoFinal - anoInicial);
+meses = (anos * 12);
+dias = (meses * 30);
+semanas = (meses * 4);
+
+console.log(`A idade desta pessoa em: `);
+console.log(`anos é: ${anos}`);
+console.log(`meses é: ${meses}`);
+console.log(`dias é: ${dias}`);
+console.log(`semanas é: ${semanas}`);

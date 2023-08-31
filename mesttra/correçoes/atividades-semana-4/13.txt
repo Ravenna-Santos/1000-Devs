@@ -1,0 +1,10 @@
+let l350, g600, g2000, quantidadeTotalML, quantidadeTotalLitros;
+
+l350 = parseInt(prompt("Digite a quantidade de latas de 350ml: "));
+g600 = parseInt(prompt("Digite a quantidade de garrafas de 600ml: "));
+g2000 = parseInt(prompt("Digite a quantidade de garrafas de 2 litros: "));
+
+quantidadeTotalML = (l350 * 350) + (g600 * 600) + (g2000 * 2000);
+quantidadeTotalLitros = (quantidadeTotalML / 1000);
+
+console.log(`A quantidade total de litros é: ${quantidadeTotalLitros}`);

@@ -1,0 +1,9 @@
+let frente = parseFloat(prompt("Quantos metros o terreno possui de frente:"));
+let lateral = parseFloat(prompt("Quantos metros o terreno possui de lateral:"));
+let valorMetro = parseFloat(prompt("Informe o valor do metro quadrado:"));
+
+let area = frente * lateral;
+let terrenoValor = area * valorMetro;
+
+console.log("Área total do terreno: "+ area.toFixed(2) +" mts");
+console.log("O valor deste terreno é: R$ " + terrenoValor.toFixed(2));

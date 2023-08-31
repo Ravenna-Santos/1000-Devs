@@ -1,0 +1,15 @@
+{
+  "name": "1000devs",
+  "description": "- Comando: prompt()\r - Comando: console.log()\r - Conceito geral de Variáveis\r - Conceito de tipos de dados em programação\r - Variáveis e Tipos de Dados em JavaScript\r - **Lista Exercícios - Algoritmos Sequenciais**\r - Regras para o nome de variáveis\r - Uso de comentários de código\r - Operadores Aritméticos\r - Tipos de dados e conversão de dados\r - Precedencia Matemática entre os Operadores Aritméticos\r - Conversão de texto para número/Aninhamento de Comando",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

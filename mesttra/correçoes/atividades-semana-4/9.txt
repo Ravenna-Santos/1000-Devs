@@ -1,0 +1,42 @@
+console.log("Área do trapézio:");
+let baseMaiorTrapezio,  baseMenorTrapezio, alturaTrapezio, areaTrapezio
+
+baseMaiorTrapezio = parseFloat(prompt("Informe o valor da base maior: "));
+baseMenorTrapezio = parseFloat(prompt("Informe o valor da base menor: "));
+alturaTrapezio = parseFloat(prompt("Informe o valor da altura: "));
+areaTrapezio = ((baseMaiorTrapezio + baseMenorTrapezio) * alturaTrapezio) / 2;
+
+console.log(`A área do trapézio é: ${areaTrapezio.toFixed(2)}`);
+
+console.log("Área do quadrado:");
+let ladoQuadrado, areaQuadrado;
+
+ladoQuadrado = parseFloat(prompt("Informe o valor de um dos lados: "));
+areaQuadrado = ladoQuadrado * ladoQuadrado;
+
+console.log(`A área do quadrado é: ${areaQuadrado.toFixed(2)}`);
+
+console.log("Área do retângulo:");
+let larguraRetangulo, alturaRetangulo, areaRetangulo;
+
+larguraRetangulo = parseFloat(prompt("Informe o valor da largura: "));
+alturaRetangulo = parseFloat(prompt("Informe o valor da altura: "));
+areaRetangulo = larguraRetangulo * alturaRetangulo;
+
+console.log(`A área do retângulo é: ${areaRetangulo.toFixed(2)}`);
+
+console.log("Área do círculo:");
+let raioCirculo, areaCirculo;
+const PI = 3.14;
+raioCirculo = parseFloat(prompt("Informe o valor do raio: "));
+areaCirculo = PI * raioCirculo * raioCirculo;
+
+console.log(`A área do círculo é: ${areaCirculo.toFixed(2)}`);
+
+console.log("Área do triângulo:");
+let baseTriangulo, alturaTriangulo, areaTriangulo;
+
+baseTriangulo = parseFloat(prompt("Informe o valor da base: "));
+alturaTriangulo = parseFloat(prompt("Informe o valor da altura: "));
+areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+console.log(`A área do triângulo é: ${areaTriangulo.toFixed(2)}`);

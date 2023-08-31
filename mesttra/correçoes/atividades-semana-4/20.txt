@@ -1,0 +1,13 @@
+let numero, milhares, centenas, dezenas, unidades;
+
+numero = parseInt(prompt("Digite um número de 4 dígitos: "));
+
+milhares = Math.floor(numero / 1000);
+centenas = Math.floor((numero - (milhares * 1000)) / 100);
+dezenas = Math.floor((numero - (milhares * 1000) - (centenas * 100)) / 10);
+unidades = (numero % 10);
+
+console.log(`Milhares: ${milhares}`);
+console.log(`Centenas: ${centenas}`);
+console.log(`Dezenas: ${dezenas}`);
+console.log(`Unidades: ${unidades}`);

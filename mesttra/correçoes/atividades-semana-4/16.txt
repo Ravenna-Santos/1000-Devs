@@ -1,0 +1,13 @@
+let fatAnterior, fatSeguinte, aumentoMeta;
+
+fatAnterior = parseFloat(prompt("Digite o valor do faturamento anterior: "));
+
+fatSeguinte = (fatAnterior * 1.2);
+aumentoMeta = (fatSeguinte - fatAnterior);
+
+console.log(`A meta do próximo mês é: R$ ${fatSeguinte.toFixed(2)}`);
+console.log(`Um aumento de: R$ ${aumentoMeta.toFixed(2)}`);
+console.log("Quantidade de peças a serem vendidas para atingirmos a meta:");
+console.log(`Produto 1: ${(aumentoMeta / 150.0).toFixed(2)} peças`);
+console.log(`Produto 2: ${(aumentoMeta / 220.0).toFixed(2)} peças`);
+console.log(`Produto 3: ${(aumentoMeta / 97.0).toFixed(2)} peças`);
