@@ -14,27 +14,26 @@ Caso as medidas não encaixem em nenhuma das regras o valor final do terreno nã
 
 const prompt = require('prompt-sync')();
 
-var frente = Number(prompt("Quantos metros o terreno possui de frente: "))
-var lateral = Number(prompt("Quantos metros o terreno possui de lateral: "))
-var valorMetro = Number(prompt("Informe o valor do metro quadrado: "))
+var frente = parseFloat(prompt("Quantos metros o terreno possui de frente: "))
+var lateral = parseFloat(prompt("Quantos metros o terreno possui de lateral: "))
+var valorMetro = parseFloat(prompt("Informe o valor do metro quadrado: R$ "))
 
 var areaTotal = frente * lateral
 
 var valorTerreno = areaTotal * valorMetro
 
-console.log("\nÁrea total do terreno de " + frente + "mts de frente com " + lateral + "mts lateral é: " + areaTotal + "mts")
+console.log("\nÁrea total do terreno de " + frente.toFixed(2) + "mts de frente com " + lateral.toFixed(2) + "mts lateral é: " + areaTotal.toFixed(2) + "mts")
 
 if(Math.abs(frente - lateral) < ((frente) * (10/100))){ //diferença de metragem entre a frente e a lateral seja menor que 10% da metragem da frente,
-    valorTerreno = valorTerreno - (valorTerreno * (22/100)) //o cliente terá um acréscimo de 22% no valor final do terreno.
-    console.log('O terreno recebeu um decrescimo de 12% e custara: R$ ' + valorTerreno)
+    valorTerreno = valorTerreno + (valorTerreno * (22/100)) //o cliente terá um acréscimo de 22% no valor final do terreno.
+    console.log('O terreno recebeu um acrescimo de 22% e custara: R$ ' + valorTerreno.toFixed(2))
 }else if(frente < (lateral * (40/100))){ //Caso a metragem da frente for menor que 40% da lateral
-    console.log('O terreno recebeu um acrescimo de 22% e custara: R$ ' + valorMetro)
-    valorTerreno = valorTerreno + (valorTerreno * (12/100))// cliente terá um desconto de 12% no valor final do terreno
+    valorTerreno = valorTerreno - (valorTerreno * (12/100))// cliente terá um desconto de 12% no valor final do terreno
+    console.log('O terreno recebeu um decrescimo de 12% e custara: R$ ' + valorTerreno.toFixed(2))
 }else if(frente > (lateral * (70/100))){ //Caso a metragem da frente for maior que 70% da lateral,
     valorTerreno = valorTerreno - (valorTerreno * (15/100))//o cliente terá um desconto de 15%.
-    console.log('O terreno recebeu um decrescimo de 15% e custara: R$ ' + valorTerreno)
+    console.log('O terreno recebeu um decrescimo de 15% e custara: R$ ' + valorTerreno.toFixed(2))
 }else{
-    valorMetro = valorTerreno
-    console.log('O terreno não sofrerá nenhuma alteração e custará: R$ ' + valorTerreno)
+    console.log('O terreno não sofrerá nenhuma alteração e custará: R$ ' + valorTerreno.toFixed(2))
 }
 
