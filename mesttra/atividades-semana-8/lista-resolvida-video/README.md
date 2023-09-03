@@ -1,0 +1,1 @@
+[Link Questões](https://www.computersciencemaster.com.br/exercicios-lacos-de-repeticao/)
