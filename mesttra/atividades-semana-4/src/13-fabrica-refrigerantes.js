@@ -9,7 +9,7 @@ const prompt = require('prompt-sync')();
 
 var qtdLatinha = Number(prompt("Digite a quantidade de latas de 350ml: "))
 var qtdGarrafa600 = Number(prompt("Digite a quantidade de garrafas de 600ml: "))
-var qtdGarrafa2l = Number(prompt("Digite a quantidade de garrafas de 600ml: "))
+var qtdGarrafa2l = Number(prompt("Digite a quantidade de garrafas de 2l: "))
 
 var qtdLitros = qtdLatinha * 0.350 + qtdGarrafa600 * 0.600 + qtdGarrafa2l * 2
 
