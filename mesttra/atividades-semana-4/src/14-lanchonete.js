@@ -15,7 +15,7 @@ var mussarela = 2 * (50/1000) * quantidadeSanduiche
 var presunto = (50/1000) * quantidadeSanduiche
 var hamburguer = (120/1000) * quantidadeSanduiche
 
-console.log("\nPara produzir 34 sanduíches serão necessários: ")
+console.log("\nPara produzir " + quantidadeSanduiche+ " sanduíches serão necessários: ")
 console.log(mussarela.toFixed(2) + " kgs de mussarela")
 console.log(presunto.toFixed(2) + " kgs de presunto")
 console.log(hamburguer.toFixed(2) + " kgs de hamburger")
