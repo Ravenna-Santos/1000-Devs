@@ -8,4 +8,4 @@
 
 - Dentro da pasta raíz está as pastas beecrowd e mesttra
 - A pasta beecrownd contém os códigos de resolução dos exercícios da plataforma [Beecrowd](https://www.beecrowd.com.br).
-- A pasta mesttra contém as resoluções das questões criados pelos facilitadores da mesttra, separados pelas semana
+- A pasta mesttra contém as resoluções das questões criados pelos facilitadores da mesttra, separados por pastas nomeadas pela semana do curso em que o exercício foi passado.
