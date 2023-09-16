@@ -1,7 +1,0 @@
-let litros;
-
-litros = parseInt(prompt("Digite a quantidade de litros de suco necessária: "));
-
-console.log(`Será necessário para fazer ${litros} litros de suco de maracujá:`);
-console.log(`${(litros * 0.8).toFixed(2)} litros de água`);
-console.log(`${(litros * 0.2).toFixed(2)} litros de suco concentrado de maracujá`);

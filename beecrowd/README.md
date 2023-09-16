@@ -38,6 +38,6 @@ Todos os exercícios abaixo vocês conseguem fazer utilizando o que foi aprendid
 [1047](https://www.beecrowd.com.br/judge/pt/problems/view/1047) - ok
 [1048](https://www.beecrowd.com.br/judge/pt/problems/view/1048) - ok
 [1049](https://www.beecrowd.com.br/judge/pt/problems/view/1049) - ok
-[1050](https://www.beecrowd.com.br/judge/pt/problems/view/1050)
+[1050](https://www.beecrowd.com.br/judge/pt/problems/view/1050) - ok
 [1051](https://www.beecrowd.com.br/judge/pt/problems/view/1051) - ok
 [1052](https://www.beecrowd.com.br/judge/pt/problems/view/1052) - ok

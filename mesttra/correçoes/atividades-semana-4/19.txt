@@ -1,8 +1,0 @@
-let dia, mes, quantidadeDias;
-
-dia = parseInt(prompt("Digite o dia: "));
-mes = parseInt(prompt("Digite o mês: "));
-
-quantidadeDias = (mes * 30) + dia;
-
-console.log(`A quantidade de dias que se passaram foi: ${quantidadeDias} dias`);

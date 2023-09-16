@@ -29,4 +29,4 @@ console.log("\nFaturamento com a venda de broas: " + (qtdBroas * 1.60).toFixed(2
 console.log("Faturamento com a venda de pães: " + (qtdPaes * 0.12).toFixed(2))
 console.log("Faturamento diário (pães + broas): " + faturamentoDiario.toFixed(2))
 console.log("Valor do depósito na poupança: " + (deposito.toFixed(2)))
-console.log("Para pagar a reforma serão necessários: " + Math.ceil(valorReforma/faturamentoDiario) + " dias")
+console.log("Para pagar a reforma serão necessários: " + Math.ceil(valorReforma/deposito) + " dias")
