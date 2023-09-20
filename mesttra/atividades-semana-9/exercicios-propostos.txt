@@ -1,0 +1,28 @@
+Exercício 01: Desenvolva um algoritmo para calcular a quantidade de dias entre dois meses
+fornecidos pelo usuário, mês inicial e mês final. Desenvolva uma regra para tratar a possibilidade do mês
+inicial ser maior que o mês final. Caso isto ocorra apresente a mensagem: "Mês inicial não pode ser maior que
+o mês final".
+REGRAS: Não deve ser utilizado vetores ou matrizes. Utilize apenas um laço for e estruras de decisão. 
+
+Objetivo da restrição de não utilizar vetores ou matrizes é desenvolver o raciocínio.
+
+Pense na característica dos meses: Até o mês 7,
+os meses ímpares tem 31 dias e os pares 30, com exceção do mês de fevereiro que tem 28 dias.
+Dos meses 8 à 12 a lógica inverte. Os meses ímpares tem 31 dias e os meses pares tem 30 dias.
+Pense em utilizar uma variável para acumular os meses a medida que o laço vai executando as suas interações.
+Pense que a inicialização da variavel dentro do laço será o mês inicial e o mês final será o critério de
+termino do laço.
+
+Exercício 02:  Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 
+3 centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão necessários para que 
+Zé seja maior que Chico. A mensagem exibida será "Zé gastará xx anos para passar a altura de Chico". 
+Pense que a passagem dos anos pode ser representado representada por um laço. Cada execução do laço equivale
+a um ano.
+
+Exercício 03: Altere o algoritmo 02 para que a altura de Chico e Zé possam ser fornecidas pelo usuário além da taxa
+de crescimento por ano de cada um dos dois. Neste caso, você precisará identificar quem conseguirá passar a altura
+do outro para que o seu laço não entre em um looping infinito. Ao final apresente a seguinte mensagem:
+
+Zé gastará xx anos para passar a altura de Chico. 
+ou dependendo da situação:
+Chico gastará xx anos para passar a altura de Zé.
