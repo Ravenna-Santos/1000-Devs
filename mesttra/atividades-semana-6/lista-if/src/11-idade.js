@@ -9,94 +9,88 @@ let anoInvalido = anoFinal < anoInicial
 let mesFinalInvalido = (mesFinal < 1) || (mesFinal > 12)
 let mesInicialInvalido = (mesInicial < 1) || (mesInicial > 12)
 
-if(anoInvalido || mesFinalInvalido || mesInicialInvalido){
+if (anoInvalido || mesFinalInvalido || mesInicialInvalido) {
     console.log("Impossivel realizar o calculo. Anos e/ou Meses inconsistentes")
-}else{
-    let mesInicialEmDias = calcularMesesDias(mesInicial)
+} else {
+    let mesInicialEmDias = calcularMesesDias(mesInicial - 1)
     let mesFinalEmDias = calcularMesesDias(mesFinal)
 
     let anosEmDias = 0
     let mesesEmDias = 0
-
-    if(mesInicial < mesFinal){
+    let idadeEmDias
+    if (mesInicial <= mesFinal) {
         anosEmDias = (anoFinal - anoInicial) * 365
         mesesEmDias = mesFinalEmDias - mesInicialEmDias
-    }else if(mesFinal == mesInicial && anoFinal == anoInicial){
-        
-    }
-    
-    else{
+        idadeEmDias = anosEmDias + mesesEmDias
+        console.log(`A idade desta pessoa em dias é: ${idadeEmDias}`)
+    } else {
         anosEmDias = ((anoFinal - anoInicial) - 1) * 365
-        mesesEmDias = (mesFinalEmDias - mesInicialEmDias) + 12
+        mesesEmDias = (mesFinalEmDias - mesInicialEmDias) + 365
+        idadeEmDias = anosEmDias + mesesEmDias
+        console.log(`A idade desta pessoa em dias é: ${idadeEmDias}`)
     }
-
-    let idadeEmDias = anosEmDias + mesesEmDias
-
-    console.log(`A idade desta pessoa em dias é: ${idadeEmDias}`)
-
 }
 
-function calcularMesesDias(mes){
-    let mesAtual = mes
+function calcularMesesDias(mes) {
     let mesEmDias = 0
-    if(mes == 12){
+    if (mes == 12) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 11){
+    if (mes == 11) {
         mesEmDias += 30
-        mesAtual --
+        mes--
     }
 
-    if(mes == 10){
+    if (mes == 10) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 9){
+    if (mes == 9) {
         mesEmDias += 30
-        mesAtual --
+        mes--
     }
 
-    if(mes == 8){
+    if (mes == 8) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 7){
+    if (mes == 7) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 6){
+    if (mes == 6) {
         mesEmDias += 30
-        mesAtual --
+        mes--
     }
 
-    if(mes == 5){
+    if (mes == 5) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 4){
+    if (mes == 4) {
         mesEmDias += 30
-        mesAtual --
+        mes--
     }
 
-    if(mes == 3){
+    if (mes == 3) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
-    if(mes == 2){
+    if (mes == 2) {
         mesEmDias += 28
-        mesAtual --
+        mes--
     }
 
-    if(mes == 1){
+    if (mes == 1) {
         mesEmDias += 31
-        mesAtual --
+        mes--
     }
 
     return mesEmDias

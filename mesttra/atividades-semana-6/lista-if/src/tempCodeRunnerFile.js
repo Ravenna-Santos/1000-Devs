@@ -1,0 +1,1 @@
+calcularQtdDiasDoMes(mesFinal) - diaFinal
