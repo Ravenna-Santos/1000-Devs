@@ -8,27 +8,34 @@ function main() {
 
     let palavraSecreta = ObterPalavraSecreta()
 
-    let tentativasRestantes = palavraSecreta.length
+    let tentativasRestantes = (palavraSecreta.length - 1)
     let letrasTentadas = ""
     let letraEscolhida
+    let palavraMascarada
 
     do {  
-
+        palavraMascarada = retornarPalavraMascarada(palavraSecreta, letrasTentadas)
         console.clear()
         console.log("Letras tentadas: " + letrasTentadas)
         console.log()
         console.log("Tentativas restantes: " + tentativasRestantes)
         console.log()
-        console.log("Palavra secreta: " + retornarPalavraMascarada(palavraSecreta, letrasTentadas) )
+        console.log("Palavra secreta: " +  palavraMascarada)
         console.log()
-        exibirForca(tentativasRestantes )
+        exibirForca(tentativasRestantes)
         console.log()
-        letraEscolhida = obterTentativa()
-        letrasTentadas += letraEscolhida
 
-        //se a letra nao existir na palavra, atualiza a qtde de tentativa restantes
-        if (!letraExisteNasLetrasTentadas(letraEscolhida, palavraSecreta)) {
-            tentativasRestantes--
+
+        if(!(palavraMascarada.includes("_"))){
+            console.log("Você venceu, parabéns!")
+            break;
+        }else{
+            letraEscolhida = obterTentativa()
+            letrasTentadas += letraEscolhida
+            //se a letra nao existir na palavra, atualiza a qtde de tentativa restantes
+            if (!letraExisteNasLetrasTentadas(letraEscolhida, palavraSecreta)) {
+                tentativasRestantes--
+            }
         }
 
     } while (tentativasRestantes > 0 ) 
