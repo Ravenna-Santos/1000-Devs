@@ -6,9 +6,9 @@ main()
 function main() {
     //TODO: codigo para ler a palavra secreta de um arquivo arquivo
 
-    let palavraSecreta = "abacate"
+    let palavraSecreta = ObterPalavraSecreta()
 
-    let tentativasRestantes = 6
+    let tentativasRestantes = palavraSecreta.length
     let letrasTentadas = ""
     let letraEscolhida
 
@@ -38,6 +38,23 @@ function main() {
         console.log("Você perdeu, tente novamente.")
         exibirForca(0)
     }
+}
+
+function ObterPalavraSecreta(){
+    const fileSystem = require('fs')
+    const endereco = require('path');
+
+    const enderecoDesteScriptJS = endereco.dirname(process.argv[1]);
+
+    const conteudoArquivo = fileSystem.readFileSync(enderecoDesteScriptJS + '\\dev\\stdin', 'utf8');
+
+    const quebraLinhaWindows = '\r\n'
+
+    let lines = conteudoArquivo.split(quebraLinhaWindows);
+
+    let palavraSecreta = lines.shift();
+
+    return palavraSecreta
 }
 
 function retornarPalavraMascarada(palavraSecreta, letrasTentadas){
@@ -109,11 +126,12 @@ function obterTentativa(){
     //obter a letra ou palavra do usuario de acordo com o codigo escolhido
     switch (opcao) {
         case 1:
+        do{
             resposta = prompt("Digite a letra desejada: ")
             //TODO: temos a possibilidade do infeliz do usuário digitar mais de uma letra
             //precisamos tratar esta possibilidade, faça um teste para ver o que ocorre se ele
             //escolher a opção para digitar uma letra mas na verdade digitar uma palavra
-
+        }while(resposta.length != 1)
             return resposta
             break
         case 2:
