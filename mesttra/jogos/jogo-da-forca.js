@@ -30,7 +30,10 @@ function main() {
             console.log("Você venceu, parabéns!")
             break;
         }else{
-            letraEscolhida = obterTentativa()
+            letraEscolhida = obterTentativa(palavraSecreta)
+            if(letraEscolhida.length > 1){
+                break
+            }
             letrasTentadas += letraEscolhida
             //se a letra nao existir na palavra, atualiza a qtde de tentativa restantes
             if (!letraExisteNasLetrasTentadas(letraEscolhida, palavraSecreta)) {
@@ -111,7 +114,7 @@ function letraExisteNasLetrasTentadas(letraPalavraSecreta, letrasTentadas){
     return letraDescoberta
 }
 
-function obterTentativa(){
+function obterTentativa(palavraSecreta){
     let opcao
 
     console.log(`Escolha a opção abaixo:
@@ -142,9 +145,17 @@ function obterTentativa(){
             return resposta
             break
         case 2:
-            resposta =  prompt("Digite a letra palavra desejada: ")
+            resposta =  prompt("Digite a  palavra secreta: ")
             //TODO: implementar o bloco de codigo necessário para verificar se ele acertou a palavra
             //se acertou ganhou o jogo, se errou perde o jogo
+
+            if(resposta == palavraSecreta){
+                console.log("Você venceu, parabéns!")
+            }else{
+                console.log("Você perdeu, tente novamente.")
+            }
+            return resposta
+
             break
     }
 }
