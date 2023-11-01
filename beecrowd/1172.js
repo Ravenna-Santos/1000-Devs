@@ -23,3 +23,11 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
 //let notaExame = lines.shift();
+
+for(let i = 0; i < 10; i++){
+    if(lines[i] <= 0){
+        lines[i] = 1
+    }
+
+    console.log(`X[${i}] = ${Number(lines[i])}`)
+}

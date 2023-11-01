@@ -23,3 +23,12 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
 //let notaExame = lines.shift();
+
+let vetorDobra = [Number(lines.shift())]
+console.log(`N[0] = ${vetorDobra[0]}`)
+
+for(let i = 1; i <= 9; i ++){
+    vetorDobra[i] = vetorDobra[i-1] * 2
+    console.log(`N[${i}] = ${vetorDobra[i]}`)
+}
+
