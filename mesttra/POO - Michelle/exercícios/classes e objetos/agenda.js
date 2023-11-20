@@ -8,10 +8,10 @@ class Contato{
     }
 }
 
-var agenda = ({
+let agenda = ({
     adicionar(nome, sobrenome, numero){
         const contato = new Contato(nome, sobrenome, numero);
-        arrayAgenda[arrayAgenda.length] = contato;
+        arrayAgenda.push(contato);
 
     },
 
@@ -28,7 +28,7 @@ var agenda = ({
         console.log("id".padEnd(5) + "nome".padEnd(20) + "número".padEnd(10))
         for(let index = 0; index < arrayAgenda.length; index++){
             contato = arrayAgenda[index]
-            console.log(String(index).padEnd(5) + String(contato.nome + " " + contato.sobrenome ).padEnd(20) + String(contato.numero).padEnd(10))
+            console.log(String(index + 1).padEnd(5) + String(contato.nome + " " + contato.sobrenome ).padEnd(20) + String(contato.numero).padEnd(10))
         }
     }
 
@@ -36,11 +36,18 @@ var agenda = ({
 })
 
 agenda.adicionar("Ravenna", "Santos", 123)
-agenda.imprimir()
+//agenda.imprimir()
 agenda.adicionar("Maria", "Jesus", 123)
+//agenda.imprimir()
+// agenda.excluir(1)
+// agenda.imprimir()
+agenda.adicionar("Ravenna", "Santos", 123)
+agenda.adicionar("Ravenna", "Santos", 123)
+agenda.adicionar("Ravenna", "Santos", 123)
+//agenda.imprimir()
+agenda.editar(3, "Welligton", "Rubens", 120);
 agenda.imprimir()
-agenda.excluir(1)
-agenda.imprimir()
+console.log(arrayAgenda)
 
 
 
