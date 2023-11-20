@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try catch finally</title>
+
+
+    <script>
+        var num; // maximo 10
+        try{ // tenta fazer o que está entre {} se der erro para imediatamente e vai para o catch
+            num = prompt("Digite um valor");
+            if(num > 10){
+                throw new Error("Valor inválido, o valor máximo é 10"); //cria um erro
+            }
+            
+        }catch(e){ // só é executado  o que está entre {} se o erro for gerado e coloca o erro na variavel e 
+            console.log("ERRO: " + e.message); // acessa a mensagem do erro
+            num = 10;
+        }finally{
+            document.write("Valor: ", + num + "<br>"); // é executada ocorrendo o erro ou n
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <a href="https://www.youtube.com/watch?v=AWroMPi9PXU">Tratamento de erros / try catch finally</a>
+    
+</body>
+</html>
