@@ -1,3 +1,10 @@
+/*
+Agenda de Contatos:
+Criar uma classe Contato que inclui informações como nome, sobrenome e número de telefone.
+Em seguida, podem criar um objeto Agenda que permite adicionar, editar e excluir contatos.
+
+*/
+
 let arrayAgenda = []
 
 class Contato{

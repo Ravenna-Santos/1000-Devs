@@ -1,3 +1,11 @@
+/*
+Classe de Veículo:
+Criar uma classe Veículo com propriedades como marca, modelo, ano, e um
+ método dirigir que exibe uma mensagem. Em seguida,crie objetos de diferentes 
+ veículos, como carros, motos, etc.
+
+*/
+
 class Veiculo{
     constructor(marca, modelo, ano){
         this.marca = marca
