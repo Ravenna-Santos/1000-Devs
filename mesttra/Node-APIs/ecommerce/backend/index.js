@@ -1,5 +1,6 @@
 // para iniciar o projeto "npm init -y" q cria o arquivo package.json
 // para instalar o express "npm install express"
+// para conectar com o postgress instala a lib node-postegres "npm install"
 
 const express = require('express');
 
