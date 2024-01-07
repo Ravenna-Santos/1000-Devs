@@ -12,7 +12,7 @@ const products = []
 // [GET] - Rota que lista todos os produtos
 router.get('/', async (req, res) => {
     try{ 
-        const productsDB = await pool.query('SELECT * FROM products')
+        const productsDB = await pool.query('SELECT * FROM products ORDER BY name')
         res.send(productsDB.rows); // uma forma mais clara de pegar as linhas, em outras funções farei de outra forma equivalente
     }catch(error){
         console.error('Erro ao buscar o produto', error);
